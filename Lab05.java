@@ -12,6 +12,17 @@ import edu.fcps.karel2.Robot;
 public class Lab05 {
 
      public static void main(String[] args) {
-          // TODO Your code goes here
-     }
+          
+          Display.openWorld("maps/shuttle.map");
+          Display.setSize(8, 8);
+          Display.setSpeed(8);
+          
+       Racer pete = new Racer(7);
+       Racer john = new Racer(4);
+       Racer sam = new Racer(1);
+       pete.runTheRace();
+       john.runTheRace();
+       sam.runTheRace();
+       
+            }
 }
